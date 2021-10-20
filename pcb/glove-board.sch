@@ -1,0 +1,332 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector_Generic:Conn_01x03 J1
+U 1 1 616A9FAC
+P 3600 4900
+F 0 "J1" H 3518 5217 50  0000 C CNN
+F 1 "Conn_01x03" H 3518 5126 50  0000 C CNN
+F 2 "Connector_JST:JST_XH_B3B-XH-A_1x03_P2.50mm_Vertical" H 3680 4805 50  0001 L CNN
+F 3 "~" H 3600 4900 50  0001 C CNN
+	1    3600 4900
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x03 J2
+U 1 1 616AAF9E
+P 3600 4400
+F 0 "J2" H 3518 4717 50  0000 C CNN
+F 1 "Conn_01x03" H 3518 4626 50  0000 C CNN
+F 2 "Connector_JST:JST_XH_B3B-XH-A_1x03_P2.50mm_Vertical" H 3600 4400 50  0001 C CNN
+F 3 "~" H 3600 4400 50  0001 C CNN
+	1    3600 4400
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x03 J3
+U 1 1 616AB520
+P 3600 3950
+F 0 "J3" H 3518 4267 50  0000 C CNN
+F 1 "Conn_01x03" H 3518 4176 50  0000 C CNN
+F 2 "Connector_JST:JST_XH_B3B-XH-A_1x03_P2.50mm_Vertical" H 3600 3950 50  0001 C CNN
+F 3 "~" H 3600 3950 50  0001 C CNN
+	1    3600 3950
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x03 J4
+U 1 1 616AB706
+P 3600 3500
+F 0 "J4" H 3518 3817 50  0000 C CNN
+F 1 "Conn_01x03" H 3518 3726 50  0000 C CNN
+F 2 "Connector_JST:JST_XH_B3B-XH-A_1x03_P2.50mm_Vertical" H 3600 3500 50  0001 C CNN
+F 3 "~" H 3600 3500 50  0001 C CNN
+	1    3600 3500
+	-1   0    0    -1  
+$EndComp
+$Comp
+L teensy:Teensy4.0 U1
+U 1 1 616C057F
+P 6000 4000
+F 0 "U1" H 6000 5615 50  0000 C CNN
+F 1 "Teensy4.0" H 6000 5524 50  0000 C CNN
+F 2 "teensy:Teensy40" H 5600 4200 50  0001 C CNN
+F 3 "" H 5600 4200 50  0001 C CNN
+	1    6000 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 616CC5C9
+P 4100 4900
+F 0 "R1" H 4030 4854 50  0000 R CNN
+F 1 "R" H 4030 4945 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 4030 4900 50  0001 C CNN
+F 3 "~" H 4100 4900 50  0001 C CNN
+	1    4100 4900
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 616CD115
+P 4100 4400
+F 0 "R2" H 4030 4354 50  0000 R CNN
+F 1 "R" H 4030 4445 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 4030 4400 50  0001 C CNN
+F 3 "~" H 4100 4400 50  0001 C CNN
+	1    4100 4400
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 616CDA71
+P 4100 3950
+F 0 "R3" H 4030 3904 50  0000 R CNN
+F 1 "R" H 4030 3995 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 4030 3950 50  0001 C CNN
+F 3 "~" H 4100 3950 50  0001 C CNN
+	1    4100 3950
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 616CE345
+P 4100 3500
+F 0 "R4" H 4030 3454 50  0000 R CNN
+F 1 "R" H 4030 3545 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 4030 3500 50  0001 C CNN
+F 3 "~" H 4100 3500 50  0001 C CNN
+	1    4100 3500
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	3800 3500 3900 3500
+Wire Wire Line
+	3900 3500 3900 2950
+Wire Wire Line
+	3900 3500 3900 3950
+Wire Wire Line
+	3900 3950 3800 3950
+Connection ~ 3900 3500
+Wire Wire Line
+	3900 3950 3900 4400
+Wire Wire Line
+	3900 4400 3800 4400
+Connection ~ 3900 3950
+Wire Wire Line
+	3900 4400 3900 4900
+Wire Wire Line
+	3900 4900 3800 4900
+Connection ~ 3900 4400
+Wire Wire Line
+	4100 4250 3800 4250
+Wire Wire Line
+	3800 4250 3800 4300
+Wire Wire Line
+	4100 4550 3800 4550
+Wire Wire Line
+	3800 4550 3800 4500
+Wire Wire Line
+	4100 4100 3800 4100
+Wire Wire Line
+	3800 4100 3800 4050
+Wire Wire Line
+	4100 3800 3800 3800
+Wire Wire Line
+	3800 3800 3800 3850
+Wire Wire Line
+	4100 3650 3800 3650
+Wire Wire Line
+	3800 3650 3800 3600
+Wire Wire Line
+	4100 3350 3800 3350
+Wire Wire Line
+	3800 3350 3800 3400
+Wire Wire Line
+	4100 5050 3800 5050
+Wire Wire Line
+	3800 5050 3800 5000
+Wire Wire Line
+	4100 4750 3800 4750
+Wire Wire Line
+	3800 4750 3800 4800
+Wire Wire Line
+	4100 4550 4700 4550
+Connection ~ 4100 4550
+Wire Wire Line
+	4700 4550 4700 4150
+Wire Wire Line
+	4700 4150 4100 4150
+Wire Wire Line
+	4100 4150 4100 4100
+Connection ~ 4700 4150
+Connection ~ 4100 4100
+Wire Wire Line
+	4100 3650 4700 3650
+Wire Wire Line
+	4700 3650 4700 4150
+Connection ~ 4100 3650
+$Comp
+L Connector_Generic:Conn_01x02 BTN1
+U 1 1 616E5DB3
+P 3600 2950
+F 0 "BTN1" H 3518 2625 50  0000 C CNN
+F 1 "Conn_01x02" H 3518 2716 50  0000 C CNN
+F 2 "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical" H 3600 2950 50  0001 C CNN
+F 3 "~" H 3600 2950 50  0001 C CNN
+	1    3600 2950
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3800 2950 3900 2950
+Connection ~ 3900 2950
+Wire Wire Line
+	3900 2950 3900 2650
+Wire Wire Line
+	3800 2850 4900 2850
+NoConn ~ 4900 2750
+NoConn ~ 4900 3050
+NoConn ~ 4900 2950
+NoConn ~ 4900 3150
+NoConn ~ 4900 3250
+NoConn ~ 4900 3350
+NoConn ~ 4900 3450
+NoConn ~ 4900 3550
+NoConn ~ 4900 4050
+NoConn ~ 4900 4250
+NoConn ~ 4900 4750
+NoConn ~ 4900 4650
+NoConn ~ 4900 4550
+NoConn ~ 4900 4450
+NoConn ~ 4900 4350
+NoConn ~ 4900 5350
+NoConn ~ 4900 5250
+NoConn ~ 4900 3850
+NoConn ~ 4900 3750
+NoConn ~ 4900 3650
+NoConn ~ 7100 5250
+NoConn ~ 7100 5350
+NoConn ~ 7100 5050
+NoConn ~ 7100 4550
+NoConn ~ 7100 4450
+NoConn ~ 7100 4350
+NoConn ~ 7100 4250
+NoConn ~ 7100 4150
+NoConn ~ 7100 4050
+NoConn ~ 7100 3950
+NoConn ~ 7100 3850
+NoConn ~ 7100 3750
+NoConn ~ 7100 3650
+NoConn ~ 7100 3550
+NoConn ~ 7100 3450
+NoConn ~ 7100 3350
+NoConn ~ 7100 3250
+NoConn ~ 7100 3050
+NoConn ~ 7100 2950
+NoConn ~ 7100 2850
+NoConn ~ 7100 2750
+NoConn ~ 7100 2650
+Wire Wire Line
+	3900 2650 4900 2650
+NoConn ~ 4900 3950
+Connection ~ 4700 3650
+Wire Wire Line
+	4700 3650 4700 2300
+Wire Wire Line
+	4100 5050 4700 5050
+Wire Wire Line
+	4700 5050 4700 4550
+Connection ~ 4100 5050
+Connection ~ 4700 4550
+Wire Wire Line
+	4700 2300 7300 2300
+Wire Wire Line
+	7300 5150 7100 5150
+Wire Wire Line
+	7300 2300 7300 5150
+Wire Wire Line
+	4900 4850 4850 4850
+Wire Wire Line
+	4850 4850 4850 4750
+Wire Wire Line
+	4850 4750 4100 4750
+Connection ~ 4100 4750
+Wire Wire Line
+	4900 4950 4800 4950
+Wire Wire Line
+	4800 4950 4800 4250
+Wire Wire Line
+	4800 4250 4100 4250
+Connection ~ 4100 4250
+Wire Wire Line
+	4900 5050 4750 5050
+Wire Wire Line
+	4750 5050 4750 3800
+Wire Wire Line
+	4750 3800 4100 3800
+Connection ~ 4100 3800
+Wire Wire Line
+	4900 5150 4650 5150
+Wire Wire Line
+	4650 5150 4650 3350
+Wire Wire Line
+	4650 3350 4100 3350
+Connection ~ 4100 3350
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 61744313
+P 3600 5650
+F 0 "H1" H 3700 5696 50  0000 L CNN
+F 1 "MountingHole" H 3700 5605 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_ISO7380" H 3600 5650 50  0001 C CNN
+F 3 "~" H 3600 5650 50  0001 C CNN
+	1    3600 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 61744B77
+P 3600 5900
+F 0 "H2" H 3700 5946 50  0000 L CNN
+F 1 "MountingHole" H 3700 5855 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_ISO7380" H 3600 5900 50  0001 C CNN
+F 3 "~" H 3600 5900 50  0001 C CNN
+	1    3600 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 617453A3
+P 3600 6150
+F 0 "H3" H 3700 6196 50  0000 L CNN
+F 1 "MountingHole" H 3700 6105 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_ISO7380" H 3600 6150 50  0001 C CNN
+F 3 "~" H 3600 6150 50  0001 C CNN
+	1    3600 6150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H4
+U 1 1 61745A59
+P 3600 6400
+F 0 "H4" H 3700 6446 50  0000 L CNN
+F 1 "MountingHole" H 3700 6355 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_ISO7380" H 3600 6400 50  0001 C CNN
+F 3 "~" H 3600 6400 50  0001 C CNN
+	1    3600 6400
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
